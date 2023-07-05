@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tâche - {{task.name}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="tasklist">
+            <h2>{{task.name}}</h2>
+            <div class="action">
+                {{ form(form) }}
+            </div>
+        </div>
+            
+    </div>
+{% endblock %}

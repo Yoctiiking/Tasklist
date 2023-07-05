@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tâche - {{task.name}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+    <div class="show">
+
+        <div class="tasklist">
+            {% if task.isCompleted %}
+                {% set textdeco = 'line-through' %}
+                {% set color = 'gray' %}
+                {% set style = 'italic' %}
+            {% else %}
+                {% set textdeco = 'none' %}
+                {% set color = 'black' %}
+                {% set style = '' %}
+            {% endif %}
+            <h2 style="text-decoration: {{ textdeco }}; color: {{ color }}; font-style: {{style}}" href="{{ path('task', {id: task.id}) }}">{{task.name}}</h2>
+        </div>
+            
+        <div class="action">
+            <a href="{{path('complete_task', {id: task.id})}}" class="complete">Fait✅</a>  | <a href="{{path('edit_task', {id : task.id})}}" class="edit">Modifier📝</a>  | <a href="{{path('delete_task', {id : task.id})}}" class="delete">Supprimer🚮</a> 
+        </div>    
+        </div>    
+    </div>
+{% endblock %}

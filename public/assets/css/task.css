@@ -1,0 +1,81 @@
+body{
+    
+}
+
+.container{
+    border: 10px solid red;
+    border-radius: 20px;
+    margin: 30%;
+    margin-top: 12.5%;
+    width: 850px;
+    color: black ;
+    padding-bottom: 40px;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;    
+}
+
+.formText{
+    width: 25pc;
+    height: 35px;
+    border-color: rgb(108, 108, 245);
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.formButton{
+    width: 5pc;
+    height: 40px;
+    background-color: rgb(92, 92, 226);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.tasklist{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.list{
+    font-size: 25px;
+    width: 450px;
+}
+
+.tasklist a{
+    font-size: 20px;
+}
+
+.action{
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-right: 5%;
+}
+
+.complete{
+    color: rgb(0, 124, 0);
+    font-size: 20px;
+}
+
+.edit{
+    color: rgb(4, 0, 255);
+    font-size: 20px
+}
+
+.delete{
+    color: red;
+    font-size: 20px
+}
+
+footer{
+
+}
